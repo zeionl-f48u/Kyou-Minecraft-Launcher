@@ -1,9 +1,10 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "kyou-minecraft-launcher",
+  "productName": "Kyou Minecraft Launcher",
   "version": "0.1.0",
-  "identifier": "com.kyou-minecraft-launcher.app",
+  "identifier": "com.kyou.minecraft.launcher",
   "build": {
+    "devtools": true,
     "beforeDevCommand": "pnpm dev",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "pnpm build",
@@ -12,9 +13,12 @@
   "app": {
     "windows": [
       {
-        "title": "kyou-minecraft-launcher",
-        "width": 800,
-        "height": 600
+        "title": "Kyou Minecraft Launcher",
+        "width": 900,
+        "height": 650,
+        "minWidth": 800,
+        "minHeight": 500,
+        "transparent": true
       }
     ],
     "security": {
